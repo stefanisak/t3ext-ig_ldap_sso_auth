@@ -704,7 +704,7 @@ class Authentication
                 $siteFinder = GeneralUtility::makeInstance(
                     \TYPO3\CMS\Core\Site\SiteFinder::class
                 );
-                $currentSite = $siteFinder->getSiteByPageId($typo3['uid']);
+                $currentSite = $siteFinder->getSiteByPageId($typo3['pid']);
 
                 // Context is a singleton, so we can get the current Context by instantiation
                 $currentContext = GeneralUtility::makeInstance(
